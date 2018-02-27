@@ -1,0 +1,66 @@
+body {
+
+}
+
+.rdiv, .gdiv {
+	height:100vh;
+	
+
+}
+#add {
+	background: #006699;
+	color:white;
+	font-size: 25px;
+	padding: 10px;
+
+
+}
+.item {
+	padding: 10px;
+	border-radius:5px;
+	font-size: 20px;
+	margin-top:5px;
+	text-align: center;
+	background:yellow;
+	color: black;
+
+}
+
+ ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+#movie_name {
+	width:96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding:5px;
+	border-radius:2px;
+	margin-bottom:10px;
+	margin-top:50px;
+}
+ .search-container {
+ 	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+ 	
+ 	k
+ }
+
+ .search-item {
+ 
+ 	font-size: 20px;
+ 	color:black;
+ 	background: yellow;
+ 	padding:5px;
+ }
+ .search-result {
+ 	margin-top:10px;
+ }
+
+ .search-box {
+ 	width: 100%;
+ }
+

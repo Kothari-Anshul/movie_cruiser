@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Movie Store
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-md-8 search-container rdiv" style="background: red;">
+            <input type="text " placeholder="Enter Movie Name" id="movie_name">
+            <input type="button " class="btn btn-primary" id="search-btn" value="Search">
+            <div class="panel-group search-box" id="accordion">
+            </div>
+        </div>
+        <!-- My collection of Movies which will be used by Java Script -->
+        <div class="col-md-4 collection gdiv" style="background: green;">
+            <h2 class="text-center">MY COLLECTIONS</h2>
+            <div class="text-right">
+                <span id="add" class=" img-circle">+</span>
+                <ul id="bag">
+                </ul>
+            </div>
+            <!-- Modal common to all the items-->
+            <div class="modal fade" id="myModal" data-show="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    	<div id = "modal_content">
+                    		
+                    	</div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" id="dismiss" data-dismiss="modal">DELETE</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+    </div>
+    <!-- /.modal -->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/showCollection.js"></script>
+    <script src="js/collectionItem.js"></script>
+    <script src="js/resultItem.js"></script>
+    <script src="js/getdata.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
