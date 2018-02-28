@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Movie Store
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+</head>
+
+<body>
+    <div class="search-container rdiv" style="background: white;">
+        <form action="#" style="width:100%;" class="text-center">
+            <input type="text " placeholder="Enter Movie Name Here" id="movie_name" autofocus>
+            <input type="button" class="btn btn-primary" id="search-btn" value="Search">
+        </form>
+        <div class="panel-group search-box" id="accordion">
+        </div>
+    </div>
+    <!-- My collection of Movies which will be used by Java Script -->
+    <div class=" collection gdiv">
+        <h2 class="text-center" style="color:white;">MY COLLECTIONS</h2>
+        <!-- Add modal-->
+        <a id="add" data-toggle="modal" href="#addModal" class="btn btn-primary btn-lg">+</a>
+        <!-- Modal -->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">GIVE NAME TO YOUR COLLECTION</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <input autofocus type="text" class="form-control" id="collection_name">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="save">SAVE</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <ul id="bag">
+        </ul>
+        <!-- Modal common to all the items-->
+        <div class="modal fade" id="myModal" data-show="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div id="modal_content">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" id="dismiss" data-dismiss="modal">DELETE</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+    </div>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src = "js/materialize.js"></script>
+    <script src="js/showCollection.js"></script>
+    <script src="js/collectionItem.js"></script>
+    <script src="js/resultItem.js"></script>
+    <script src="js/getdata.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
